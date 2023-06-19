@@ -24,7 +24,8 @@ const HeroesList = () => {
         return ( <div>
             <button onClick={() => getHeroesData()}>GET DATA</button><br/>
             {heroes.map((hero) => {
-               return (<ul>
+               return (<ul key = {hero.DOC_ID}>
+                
                    <li>name: {hero.name}</li>
                    <li>vehicle: {hero.vehicle}</li>
                    <li>docId: {hero.DOC_ID}</li>
